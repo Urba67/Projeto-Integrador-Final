@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXO — guia sobre o uso responsável da Inteligência Artificial na educação.">
+  <title>NEXO — A IA na Educação</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/NEXO.png">
+</head>
+<body>
+
+  <header class="site-header" id="topo">
+    <a class="brand" href="index.html" aria-label="NEXO, voltar ao início">
+      <img class="brand-image" src="img/NEXO.png" alt="">
+      <span>NEXO</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="entenda.html">Entenda a IA</a>
+      <a href="cuidados.html">Cuidados</a>
+      <a href="quiz.html">Quiz rápido</a>
+      <a href="formulario.html" aria-current="page">Formulário</a>
+      <a href="pesquisas.html">Pesquisas</a>
+      <a href="referencias.html">Referências</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="text-toggle" aria-label="Alternar tamanho do texto" title="Tamanho do texto">◌</button>
+      <button class="icon-button" id="theme-toggle" aria-label="Alternar modo de cor" title="Modo de cor">☾</button>
+      <button class="menu-button" id="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main class="form-main">
+    <section class="form-section section-shell" id="formulario">
+      <div class="section-marker">
+
+      </div>
+
+      <div class="form-layout">
+        <div class="form-intro">
+          <p class="kicker">06 / SUA OPINIÃO</p>
+          <h2>Como você<br><span>usa a IA?</span></h2>
+          <p>Conte um pouco da sua experiência. Suas respostas ajudam a entender como a tecnologia pode apoiar o aprendizado sem substituir o pensamento crítico.</p>
+        </div>
+
+        <form class="feedback-form" id="feedback-form">
+          <div class="form-row">
+            <label for="student-name">Nome</label>
+            <input type="text" id="student-name" name="name" autocomplete="name" placeholder="Digite seu nome" required>
+          </div>
+
+          <div class="form-row">
+            <label for="student-email">E-mail</label>
+            <input type="email" id="student-email" name="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="ia-frequency">Com que frequência você usa IA para estudar?</label>
+            <select id="ia-frequency" name="frequency" required>
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option>Todos os dias</option>
+              <option>Algumas vezes por semana</option>
+              <option>Raramente</option>
+              <option>Ainda não uso</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="student-opinion">Qual é a sua principal opinião sobre o uso de IA na educação?</label>
+            <textarea id="student-opinion" name="opinion" rows="5" placeholder="Escreva sua resposta" required></textarea>
+          </div>
+
+          <label class="checkbox-row" for="responsible-use">
+            <input type="checkbox" id="responsible-use" name="responsible-use" required>
+            <span>Comprometo-me a conferir as informações e preservar minha autoria.</span>
+          </label>
+
+          <button class="button button-primary" type="submit">Enviar resposta <span>↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <span>✦</span>
+      <span>NEXO — Projeto Integrador</span>
+    </div>
+    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Voltar ao topo ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
